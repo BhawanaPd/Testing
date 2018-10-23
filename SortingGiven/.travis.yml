@@ -1,3 +1,10 @@
+# specify language
 language: java
 install: gradle assemble
 script: gradle
+
+# configure which branches to run
+branches:
+  # whitelist
+  only:
+    - master
